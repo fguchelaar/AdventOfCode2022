@@ -21,7 +21,6 @@ public func gcd(_ numbers: [Int]) -> Int {
     numbers.reduce(0) { gcd($0, $1) }
 }
 
-
 /// Calculates the _least common multiple_ for the given values
 /// - Returns: the smallest positive integer that is divisible by each of the integers
 public func lcm(_ m: Int, _ n: Int) -> Int {

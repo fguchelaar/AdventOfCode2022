@@ -11,9 +11,9 @@ final class AdventKitTests: XCTestCase {
 
         XCTAssertEqual(gcd(25, 15, 10), 5)
         XCTAssertEqual(gcd([25, 15, 10]), 5)
-        
+
         XCTAssertEqual(gcd([21, 8]), 1)
-        XCTAssertEqual(gcd([8,21]), 1)
+        XCTAssertEqual(gcd([8, 21]), 1)
     }
 
     func testLCM() {
