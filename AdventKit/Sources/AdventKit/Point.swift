@@ -72,4 +72,10 @@ public struct Point: Equatable, Hashable {
     public static func + (lhs: Point, rhs: Point) -> Point {
         Point(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
     }
+
+    /// Subtracts the x- and y-values to create a new Point
+    /// - Returns: a Point with the x- and y-values subtracted each other
+    public static func - (lhs: Point, rhs: Point) -> Point {
+        Point(x: lhs.x - rhs.x, y: lhs.y - rhs.y)
+    }
 }
