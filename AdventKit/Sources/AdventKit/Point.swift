@@ -18,6 +18,18 @@ public struct Point: Equatable, Hashable {
         self.invertY = invertY
     }
 
+    public init?(string: String, invertY: Bool = false) {
+        let parts = string.split(separator: ",")
+        guard let x = Int(parts[0]),
+              let y = Int(parts[1])
+        else {
+            return nil
+        }
+        self.x = x
+        self.y = y
+        self.invertY = invertY
+    }
+    
     public static var zero: Point {
         Point(x: 0, y: 0)
     }
