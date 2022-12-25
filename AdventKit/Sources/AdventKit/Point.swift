@@ -90,4 +90,15 @@ public struct Point: Equatable, Hashable {
     public static func - (lhs: Point, rhs: Point) -> Point {
         Point(x: lhs.x - rhs.x, y: lhs.y - rhs.y)
     }
+    
+    
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(x)
+        hasher.combine(y)
+    }
+    
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        lhs.x == rhs.x && lhs.y == rhs.y
+    }
 }
