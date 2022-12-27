@@ -16,6 +16,40 @@ public struct Point3d: Equatable, Hashable {
         Point3d(x: 0, y: 0, z: 0)
     }
 
+    public init(x: Int, y: Int, z: Int) {
+        self.x = x
+        self.y = y
+        self.z = z
+    }
+
+    public var up: Point3d {
+        Point3d(x: x, y: y + 1, z: z)
+    }
+
+    public var right: Point3d {
+        Point3d(x: x + 1, y: y, z: z)
+    }
+
+    public var down: Point3d {
+        Point3d(x: x, y: y - 1, z: z)
+    }
+
+    public var left: Point3d {
+        Point3d(x: x - 1, y: y, z: z)
+    }
+
+    public var front: Point3d {
+        Point3d(x: x, y: y, z: z - 1)
+    }
+
+    public var back: Point3d {
+        Point3d(x: x, y: y, z: z + 1)
+    }
+
+    public var n6: [Point3d] {
+        [up, right, down, left, front, back]
+    }
+
     /// Calculates the distance between two point, using _manhattan distance_.
     /// - Returns: distance between two point
     public func manhattan(to other: Point3d) -> Int {
