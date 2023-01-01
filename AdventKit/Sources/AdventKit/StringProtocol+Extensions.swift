@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  StringProtocol+Extensions.swift
 //
 //
 //  Created by Frank Guchelaar on 05/12/2022.

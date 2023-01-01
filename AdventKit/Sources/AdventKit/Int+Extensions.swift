@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Int+Extensions.swift
 //  
 //
 //  Created by Frank Guchelaar on 08/12/2022.
